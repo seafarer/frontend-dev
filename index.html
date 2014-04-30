@@ -1,690 +1,747 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-            <div class="slides">
-                <section data-id="title-page">
-                    <h1>Front end dev</h1>
-                    <h1>&nbsp;landscape</h1>
-                </section>
-                <section data-id="sass-page">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section data-id="title-page">
+    <h1>Front end dev</h1>
+    <h1>&nbsp;landscape</h1>
+</section>
+<section data-id="sass-page">
 
-                    <section data-id="sass-intro">
-                        <h1>SASS</h1>
-                        <div>
-                             <br>
-                        </div>
-                        <div>Watch a file</div>
-                        <div>
-                            <pre><code data-trim class="bash">$ sass --watch input.scss:output.css</code></pre>
-                        </div>
-                        <div>
-                            <br>
-                        </div>
-                        <div>Watch a directory</div>
-                        <div>
-                            <pre><code data-trim class="bash">$ sass --watch app/sass:public/stylesheets</code></pre>
-                        </div>
-                    </section>
+    <section data-id="sass-intro">
+        <h1>SASS</h1>
+        <div>
+            <br>
+        </div>
+        <div>Watch a file</div>
+        <div>
+            <pre><code data-trim class="bash">$ sass --watch input.scss:output.css</code></pre>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>Watch a directory</div>
+        <div>
+            <pre><code data-trim class="bash">$ sass --watch app/sass:public/stylesheets</code></pre>
+        </div>
+    </section>
 
-                    <section data-id="sass-pros">
-                        <h3>Sass cont.</h3>
-                        <p>
-                            <br>
-                        </p>
-                        <h2>PROS</h2>
-                        <div>
-                            <ul>
-                                <li>Only have to download and worry about 1 thing</li>
-                                <li>Can use bleeding edge developments</li>
-                                <ul>
-                                    <li>
-                                        <font style="font-size: 32px;">data maps (json-esque feature)</font>
-                                    </li>
-                                    <li>
-                                        <font style="font-size: 32px;">source maps (dev tools saves &nbsp;edits directly to local style sheet)</font>
-                                    </li>
-                                    <li>
-                                        <font style="font-size: 32px;">@at-root, &amp;- Parent selector suffixes,&nbsp;Multiple assignment in @each loops</font>
-                                    </li>
-                                    <li>
-                                        <font style="font-size: 32px;">lots more cool stuff</font>
-                                    </li>
-                                    <li>
-                                        <font style="font-size: 32px;">see&nbsp;<a href="http://thesassway.com/news/sass-3-3-released">http://thesassway.com/news/sass-3-3-released</a></font>
-                                    </li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </section>
+    <section data-id="sass-pros">
+        <h3>Sass cont.</h3>
+        <p>
+            <br>
+        </p>
+        <h2>PROS</h2>
+        <div>
+            <ul>
+                <li>Only have to download and worry about 1 thing</li>
+                <li>Can use bleeding edge developments</li>
+                <ul>
+                    <li>
+                        <font style="font-size: 32px;">data maps (json-esque feature)</font>
+                    </li>
+                    <li>
+                        <font style="font-size: 32px;">source maps (dev tools saves &nbsp;edits directly to local style sheet)</font>
+                    </li>
+                    <li>
+                        <font style="font-size: 32px;">@at-root, &amp;- Parent selector suffixes,&nbsp;Multiple assignment in @each loops</font>
+                    </li>
+                    <li>
+                        <font style="font-size: 32px;">lots more cool stuff</font>
+                    </li>
+                    <li>
+                        <font style="font-size: 32px;">see&nbsp;<a href="http://thesassway.com/news/sass-3-3-released">http://thesassway.com/news/sass-3-3-released</a></font>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </section>
 
-                    <section data-id="sass-cons">
-                        <h3>sass cont.</h3>
-                        <div>
-                            <p>
-                                <br>
-                            </p>
-                            <h2>CONS</h2>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Have to write all your own mixins<br>
-                                —thus probably reinventing the wheel</li>
-                                <li>No vendor prefixing</li>
-                                <li>Used alone, version conflicts between<br>machines can be common</li>
-                            </ul>
-                        </div>
-                    </section>
-                </section>
+    <section data-id="sass-cons">
+        <h3>sass cont.</h3>
+        <div>
+            <p>
+                <br>
+            </p>
+            <h2>CONS</h2>
+        </div>
+        <div>
+            <ul>
+                <li>Have to write all your own mixins<br>
+                    —thus probably reinventing the wheel</li>
+                <li>No vendor prefixing</li>
+                <li>Used alone, version conflicts between<br>machines can be common</li>
+            </ul>
+        </div>
+    </section>
+</section>
 
-            <section data-id="compass">
-                <section data-id="compass-intro">
-                    <h1>Compass</h1>
-                    <p>
-                    Compass is a SASS plugin that extends its functionality
-                    </p>
-                    <p>
-                        <br>
-                    </p>
-                    <p>Add a config.rb to your directory</p>
-                    <div>
-                        <pre><code class="bash">$ compass init</code></pre>
-                    </div><br>
-                    <p>Watch the directories you specified in your config</p>
-                    <div>
-                        <pre><code class="bash">$ compass watch</code></pre>
-                    </div><br>
-                    <p>quickly compile a change</p>
-                    <div>
-                        <pre><code class="bash">$ compass compile</code></pre>
-                    </div>
-                </section>
-                <section data-id="compass-pros">
-                    <h2>compass cont.</h2>
-                    <div>
-                        <br>
-                    </div>
-                    <h1>pros</h1>
-                    <div>
-                        <ul>
-                            <li>Lots of mixins</li>
-                            <li>Spriting!</li>
-                            <li>Vendor prefixing</li>
-                            <li>HUGE extension library</li>
-                            <ul>
-                                <li>singularity gs</li>
-                                <li>breakpoint</li>
-                                <li>Sassy buttons</li>
-                                <li>etc.</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </section>
-                <section data-id="compass-cons">
-                    <h2>compass cont.</h2>
-                    <div>
-                        <br>
-                    </div>
-                    <h1>Cons</h1>
-                    <div>
-                        <ul>
-                            <li>Big projects with lots of files makes&nbsp;<br>Compass slow as molasses</li>
-                            <li>Poor documentation</li>
-                            <li>Not in feature parity with latest version<br>of SASS</li>
-                            <li>Some mixins diverge from latest CSS spec</li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
+<section data-id="compass">
+    <section data-id="compass-intro">
+        <h1>Compass</h1>
+        <p>
+            Compass is a SASS plugin that extends its functionality
+        </p>
+        <p>
+            <br>
+        </p>
+        <p>Add a config.rb to your directory</p>
+        <div>
+            <pre><code class="bash">$ compass init</code></pre>
+        </div><br>
+        <p>Watch the directories you specified in your config</p>
+        <div>
+            <pre><code class="bash">$ compass watch</code></pre>
+        </div><br>
+        <p>quickly compile a change</p>
+        <div>
+            <pre><code class="bash">$ compass compile</code></pre>
+        </div>
+    </section>
+    <section data-id="compass-pros">
+        <h2>compass cont.</h2>
+        <div>
+            <br>
+        </div>
+        <h1>pros</h1>
+        <div>
+            <ul>
+                <li>Lots of mixins</li>
+                <li>Spriting!</li>
+                <li>Vendor prefixing</li>
+                <li>HUGE extension library</li>
+                <ul>
+                    <li>singularity gs</li>
+                    <li>breakpoint</li>
+                    <li>Sassy buttons</li>
+                    <li>etc.</li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+    <section data-id="compass-cons">
+        <h2>compass cont.</h2>
+        <div>
+            <br>
+        </div>
+        <h1>Cons</h1>
+        <div>
+            <ul>
+                <li>Big projects with lots of files makes&nbsp;<br>Compass slow as molasses</li>
+                <li>Poor documentation</li>
+                <li>Not in feature parity with latest version<br>of SASS</li>
+                <li>Some mixins diverge from latest CSS spec</li>
+            </ul>
+        </div>
+    </section>
+</section>
 
-        <section data-id="bundler">
-            <section data-id="bundler-intro">
-                <h1>bundler</h1>
-                <div>
-                    Helps keep SASS and Compass versions<br>
-                    in sync across machines on a per-project basis
-                </div>
-                <div>
-                    <br>
-                </div>
-                <div style="font-size: 24px;">
-                Create a gemfile
-                </div>
-                <pre><code class="bash">$ bundle init</code></pre>
-                <div style="font-size: 24px;">install versions you specified in your gemfile</div>
-                <div>
-                    <pre><code class="bash">$ bundle install</code></pre>
-                </div>
-                <div style="font-size: 24px;">
-                    Use bundler to compile your stylesheets
-                </div>
-                <pre><code class="bash">$ bundle exec compass watch</code></pre>
-            </section>
-            <section data-id="bundler-gem">
-                <h2>Bundler cont</h2>
-                <div>
-                    <br>
-                </div>
-                <div>sample gemfile</div>
-                <div>
+<section data-id="bundler">
+    <section data-id="bundler-intro">
+        <h1>bundler</h1>
+        <div>
+            Helps keep SASS and Compass versions<br>
+            in sync across machines on a per-project basis
+        </div>
+        <div>
+            <br>
+        </div>
+        <div style="font-size: 24px;">
+            Create a gemfile
+        </div>
+        <pre><code class="bash">$ bundle init</code></pre>
+        <div style="font-size: 24px;">install versions you specified in your gemfile</div>
+        <div>
+            <pre><code class="bash">$ bundle install</code></pre>
+        </div>
+        <div style="font-size: 24px;">
+            Use bundler to compile your stylesheets
+        </div>
+        <pre><code class="bash">$ bundle exec compass watch</code></pre>
+    </section>
+    <section data-id="bundler-gem">
+        <h2>Bundler cont</h2>
+        <div>
+            <br>
+        </div>
+        <div>sample gemfile</div>
+        <div>
 <pre><code data-trim class="ruby">source "https://rubygems.org"
 
-group :development do
-  gem "sass", "~&gt;3.2.0"
-  gem "compass", "~&gt;0.12.0"
-  gem "singularitygs", "~&gt;1.1.2"
-  gem 'rb-fsevent'
-  gem 'guard'
-  gem 'guard-sass'
-  gem 'guard-compass'
-  gem 'guard-livereload'
-end</code></pre>
-            </div>
-            </section>
-        </section>
+    group :development do
+    gem "sass", "~&gt;3.2.0"
+    gem "compass", "~&gt;0.12.0"
+    gem "singularitygs", "~&gt;1.1.2"
+    gem 'rb-fsevent'
+    gem 'guard'
+    gem 'guard-sass'
+    gem 'guard-compass'
+    gem 'guard-livereload'
+    end</code></pre>
+        </div>
+    </section>
+</section>
 
-        <section data-id="guard">
-            <section data-id="guard-intro">
-                <h1>Guard</h1>
-                <p>
-                    <br>
-                </p>
-                <p>Ruby gem that compiles your stylesheets, reloads your browser and can do lots of other stuff like preprocess HAML, run JSLint, etc.</p>
-                <p>
-                    <br>
-                </p>
-                <p style="font-size: 24px;">
-                Use guard (with Bundler) to compile your stylesheets
-                </p>
-                <pre><code class="bash">$ bundle exec guard</code></pre>
-            </section>
-            <section data-id="guard-sample">
-                <h2>guard cont.</h2>
-                <div>sample guardfile that compiles SASS&nbsp;<br>and reloads your browser</div>
-                <div>
-                    <br>
-                </div>
-            <div>
+<section data-id="guard">
+    <section data-id="guard-intro">
+        <h1>Guard</h1>
+        <p>
+            <br>
+        </p>
+        <p>Ruby gem that compiles your stylesheets, reloads your browser and can do lots of other stuff like preprocess HAML, run JSLint, etc.</p>
+        <p>
+            <br>
+        </p>
+        <p style="font-size: 24px;">
+            Use guard (with Bundler) to compile your stylesheets
+        </p>
+        <pre><code class="bash">$ bundle exec guard</code></pre>
+    </section>
+    <section data-id="guard-sample">
+        <h2>guard cont.</h2>
+        <div>sample guardfile that compiles SASS&nbsp;<br>and reloads your browser</div>
+        <div>
+            <br>
+        </div>
+        <div>
 <pre><code data-trim class="ruby">guard 'livereload' do
     watch(%r{.+\.(sass|css|js|jpg|jpeg|png|html?|php|inc)$})
-end
+    end
 
-guard 'compass',
-  :configuration_file =&gt; "config.rb" do
-  watch(%r{scss/.+\.s[ac]ss})
-end
+    guard 'compass',
+    :configuration_file =&gt; "config.rb" do
+    watch(%r{scss/.+\.s[ac]ss})
+    end
 </code></pre>
-            </div>
-            <div>
-                <br>
-            </div>
-            </section>
-        </section>
-        <section data-id="foundation">
-            <h1>Zurb Foundation</h1>
-            <div>Foundation comes chock full of goodies.</div>
-            <div><br></div>
-            <h3>Pros</h3>
-            <div>
-                <ul>
-                    <li>Tons of out-of-the-box responsive styles / scripts / styling</li>
-                    <li>Great for big sites</li>
-                </ul>
-            </div>
-            <div><br></div>
-            <h3>Cons</h3>
-            <div>
-                <ul>
-                    <li>Small sites might use 10% of the code</li>
-                    <li>Dont want to fight the framework</li>
-                    <li>Tends to produce sites that look the same</li>
-                </ul>
-            </div>
-        </section>
-        <section data-id="libsass">
-            <section data-id="libsass-intro">
-                <h1>LIBSASS</h1>
-                <div>A C /C++ version of SASS. <br>Written by SASS original author.</div>
-                <div>
-                    <br>
-                </div>
-                <div>Primarily compiled with <b>Node.js</b>
-                </div>
-                <div>but many other implementations are available</div>
-            </section>
-            <section data-id="libsass-pros">
-                <h2>libsass Cont.</h2>
-                <div>
-                    <br>
-                </div>
-                <h1>Pros</h1>
-                <div>
-                    <ul>
-                        <li>10x faster to compile than Ruby Sass</li>
-                        <li>100x faster to compile than Ruby Sass</li>
-                        <li>1000x faster to compile than Ruby Sass</li>
-                        <li>Funded and actively in development:&nbsp;<br>seeking feature parity with Ruby Sass</li>
-                    </ul>
-                </div>
-            </section>
-            <section data-id="libsass-cons">
-                <h2>libsass cont.</h2>
-                <div>
-                    <br>
-                </div>
-                <h1>cons</h1>
-                <div>
-                    <ul>
-                        <li>Not compatible with Compass</li>
-                        <li>Current feature parity ~ SASS 3.2</li>
-                        <li>Requires Node.js</li>
-                    </ul>
-                </div>
-            </section>
-        </section>
-        <section data-id="nodejs">
-            <h1>Node.JS</h1>
-            <div>
-                <br>
-            </div>
-            <div>Use the installer&nbsp;<a href="http://nodejs.org/">http://nodejs.org/</a>
-            </div>
-            <div>
-                <br>
-            </div>
-            <div>70,000 packages in <a href="https://www.npmjs.org/">Node Repo</a>
-            </div>
-            <div>~10,000,000 npm downloads per day</div>
-            <div>
-                <br>
-            </div>
-            <div style="font-size: 24px;">
-                Run node and npm w/o sudo
-            </div>
-            <div>
-            <pre><code class="bash">$ sudo chown -R $USER /usr/local</code></pre>
-            </div>
-            <div style="font-size: 24px;">
-                (Careful with this tho ... )
-            </div>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+</section>
+<section data-id="foundation">
+    <h1>Zurb Foundation</h1>
+    <div>Foundation comes chock full of goodies.</div>
+    <div><br></div>
+    <h3>Pros</h3>
+    <div>
+        <ul>
+            <li>Tons of out-of-the-box responsive styles / scripts / styling</li>
+            <li>Great for big sites</li>
+        </ul>
+    </div>
+    <div><br></div>
+    <h3>Cons</h3>
+    <div>
+        <ul>
+            <li>Small sites might use 10% of the code</li>
+            <li>Dont want to fight the framework</li>
+            <li>Tends to produce sites that look the same</li>
+        </ul>
+    </div>
+</section>
+<section data-id="libsass">
+    <section data-id="libsass-intro">
+        <h1>LIBSASS</h1>
+        <div>A C /C++ version of SASS. <br>Written by SASS original author.</div>
+        <div>
+            <br>
+        </div>
+        <div>Primarily compiled with <b>Node.js</b>
+        </div>
+        <div>but many other implementations are available</div>
+    </section>
+    <section data-id="libsass-pros">
+        <h2>libsass Cont.</h2>
+        <div>
+            <br>
+        </div>
+        <h1>Pros</h1>
+        <div>
+            <ul>
+                <li>10x faster to compile than Ruby Sass</li>
+                <li>100x faster to compile than Ruby Sass</li>
+                <li>1000x faster to compile than Ruby Sass</li>
+                <li>Funded and actively in development:&nbsp;<br>seeking feature parity with Ruby Sass</li>
+            </ul>
+        </div>
+    </section>
+    <section data-id="libsass-cons">
+        <h2>libsass cont.</h2>
+        <div>
+            <br>
+        </div>
+        <h1>cons</h1>
+        <div>
+            <ul>
+                <li>Not compatible with Compass</li>
+                <li>Current feature parity ~ SASS 3.2</li>
+                <li>Requires Node.js</li>
+            </ul>
+        </div>
+    </section>
+</section>
+<section data-id="nodejs">
+    <h1>Node.JS</h1>
+    <div>
+        <br>
+    </div>
+    <div>Use the installer&nbsp;<a href="http://nodejs.org/">http://nodejs.org/</a>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>70,000 packages in <a href="https://www.npmjs.org/">Node Repo</a>
+    </div>
+    <div>~10,000,000 npm downloads per day</div>
+    <div>
+        <br>
+    </div>
+    <div style="font-size: 24px;">
+        Run node and npm w/o sudo
+    </div>
+    <div>
+        <pre><code class="bash">$ sudo chown -R $USER /usr/local</code></pre>
+    </div>
+    <div style="font-size: 24px;">
+        (Careful with this tho ... )
+    </div>
 
-        </section>
-        <section data-id="bourbon">
-            <section data-id="bourbon intro">
-                <h1>Bourbon</h1>
-                <div>Bourbon is a lightweight mixin library</div>
-                <div>
-                    <a href="http://bourbon.io">bourbon.io</a>
-                </div>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <div style="font-size: 24px;">
-                            Install the gem
-                    </div>
-                <pre><code class="bash">$ gem install bourbon&nbsp;</code></pre>
-                <div>
-                    <span style="font-size: 24px;">Install Bourbon into your project's stylesheets directory&nbsp;</span>
-                </div>
-                <div>
+</section>
+<section data-id="bourbon">
+    <section data-id="bourbon intro">
+        <h1>Bourbon</h1>
+        <div>Bourbon is a lightweight mixin library</div>
+        <div>
+            <a href="http://bourbon.io">bourbon.io</a>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <div style="font-size: 24px;">
+                Install the gem
+            </div>
+            <pre><code class="bash">$ gem install bourbon&nbsp;</code></pre>
+            <div>
+                <span style="font-size: 24px;">Install Bourbon into your project's stylesheets directory&nbsp;</span>
+            </div>
+            <div>
                 <pre><code class="bash">$ bourbon install</code></pre>
-                </div>
-                </div>
-                <p style="font-size: 24px;">
-                add to your stylesheet
-                </p>
-                <div>
-                <pre><code class="css">@import 'bourbon/bourbon';</code></pre>
-                </div>
-                <div>
-                    <br>
-                </div>
-            </section>
-            <section data-id="bourbon-compared">
-                <h2>bourbon cont.</h2>
-                <div>Compared to Compass:</div>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <ul style="margin-left: 1em; display: inline-block; list-style-type: disc;">
-                        <li>
-                            Bourbon doesn't rely on Ruby;<br>
-                            Its just mixins
-                        </li>
-                        <li>
-                            Compass is a Ruby extension framework<br>that extends Sass functionality
-                        </li>
-                        <li>
-                            Both use same or similar syntax
-                        </li>
-                        <li>
-                            Bourbon doesnt have:
-                        </li>
-                            <ul>
-                                <li>
-                                    spriting
-                                </li>
-                                <li>???</li>
-                            </ul>
-                    </ul>
-                </div>
+            </div>
+        </div>
+        <p style="font-size: 24px;">
+            add to your stylesheet
+        </p>
+        <div>
+            <pre><code class="css">@import 'bourbon/bourbon';</code></pre>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section data-id="bourbon-compared">
+        <h2>bourbon cont.</h2>
+        <div>Compared to Compass:</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul style="margin-left: 1em; display: inline-block; list-style-type: disc;">
+                <li>
+                    Bourbon doesn't rely on Ruby;<br>
+                    Its just mixins
+                </li>
+                <li>
+                    Compass is a Ruby extension framework<br>that extends Sass functionality
+                </li>
+                <li>
+                    Both use same or similar syntax
+                </li>
+                <li>
+                    Bourbon doesnt have:
+                </li>
+                <ul>
+                    <li>
+                        spriting
+                    </li>
+                    <li>???</li>
+                </ul>
+            </ul>
+        </div>
 
-            </section>
-        </section>
-        <section data-id="neat">
-            <section data-id="neat-intro">
-                <h1>BOURbon Neat</h1>
-                <div>Simple grid system</div>
-                <div>
-                    <a href="http://neat.bourbon.io">http://neat.bourbon.io</a>
-                </div>
-                <div>
-                    <br>
-                </div>
-                <div>Doesn't rely on presentational classes or markup</div>
-            </section>
-            <section data-id="neat-example">
-                <h2>Neat cont</h2>
-                <div>
+    </section>
+</section>
+<section data-id="neat">
+    <section data-id="neat-intro">
+        <h1>BOURbon Neat</h1>
+        <div>Simple grid system</div>
+        <div>
+            <a href="http://neat.bourbon.io">http://neat.bourbon.io</a>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>Doesn't rely on presentational classes or markup</div>
+    </section>
+    <section data-id="neat-example">
+        <h2>Neat cont</h2>
+        <div>
 <pre><code data-trim class="html">&lt;div class="wrap"&gt;
     &lt;div class="left"&gt;&lt;/div&gt;
     &lt;div class="right"&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div>
+    &lt;/div&gt;</code></pre>
+        </div>
+        <div>
 <pre><code data-trim class="scss">.wrap {
-  @include outer-container;
-  @include row;
-}
-.left {
-  @include span-columns(6);
-}
-.right {
-  @include span-columns(6);
-  @include omega(); // removes margin
-}</code></pre>
-                </div>
+    @include outer-container;
+    @include row;
+    }
+    .left {
+    @include span-columns(6);
+    }
+    .right {
+    @include span-columns(6);
+    @include omega(); // removes margin
+    }</code></pre>
+        </div>
 
-            </section>
-        </section>
-        <section data-id="bitters">
-            <h1>Bitters/Refills</h1>
-            <div>collection of default styles</div>
-            <div>
-                <a href="http://bitters.bourbon.io">http://bitters.bourbon.io</a>
-            </div>
-            <div>
-                <a href="http://refills.bourbon.io/">http://refills.bourbon.io/<br>
-                </a>
-            </div>
-            <div>
-                <br>
-            </div>
-            <div>Get up and running quick with a bunch of&nbsp;<br>out-of-the-box styles.</div>
-            <div>
-                <br>
-            </div>
-            <div>(We should build our own)</div>
-        </section>
-        <section data-id="ec736931ac1c124543c08ca9862fac64">
-            <section data-id="65bd5cb1c97f2bce8783b2f6fde4834d">
-                <h1>GRunt</h1>
-                <div>A Nodejs/NPM-based task runner and <br>dependency manager.&nbsp;<span>Similar to Guard/Bundler.</span>
-                </div>
-                <div>
-                    <br>
-                </div>
-                <div>instead of a gemfile and a guardfile</div>
-                <div>you use package.json &amp; Gruntfile.js</div>
-                <div>
-                    <br>
-                </div>
-                <div style="font-size: 24px;">
-                    install dependencies
-                </div>
-                <div>
-                <pre><code class="bash">$ npm install</code></pre>
-                </div>
-                <div>
-                   start task runner
-                </div>
-                <div>
-                <pre><code class="bash">$ grunt</code></pre>
-                </div>
-            </section>
-            <section data-id="package-json">
-                <h2>sample package.json</h2>
-                <div>
+    </section>
+</section>
+<section data-id="bitters">
+    <h1>Bitters/Refills</h1>
+    <div>collection of default styles</div>
+    <div>
+        <a href="http://bitters.bourbon.io">http://bitters.bourbon.io</a>
+    </div>
+    <div>
+        <a href="http://refills.bourbon.io/">http://refills.bourbon.io/<br>
+        </a>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>Get up and running quick with a bunch of&nbsp;<br>out-of-the-box styles.</div>
+    <div>
+        <br>
+    </div>
+    <div>(We should build our own)</div>
+</section>
+<section data-id="grunt">
+    <section data-id="grunt-intro">
+        <h1>GRunt</h1>
+        <div>A Nodejs/NPM-based task runner and <br>dependency manager.&nbsp;<span>Similar to Guard/Bundler.</span>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>instead of a gemfile and a guardfile</div>
+        <div>you use package.json &amp; Gruntfile.js</div>
+        <div>
+            <br>
+        </div>
+        <div style="font-size: 24px;">
+            install dependencies
+        </div>
+        <div>
+            <pre><code class="bash">$ npm install</code></pre>
+        </div>
+        <div>
+            start task runner
+        </div>
+        <div>
+            <pre><code class="bash">$ grunt</code></pre>
+        </div>
+    </section>
+    <section data-id="package-json">
+        <h2>sample package.json</h2>
+        <div>
 <pre><code class="json"> {
-  "name": "bmi",
+    "name": "bmi",
     "version": "0.0.1",
     "devDependencies": {
-        "grunt": "0.4.1",
-        "grunt-contrib-watch": "0.4.3",
-        "grunt-sass": "0.12.1"
+    "grunt": "0.4.1",
+    "grunt-contrib-watch": "0.4.3",
+    "grunt-sass": "0.12.1"
     }
-}</code></pre>
-                </div>
+    }</code></pre>
+        </div>
 
-            </section>
-            <section data-id="grunt-file">
-                <h2>Sample Gruntfile.js</h2>
-                <div>
+    </section>
+    <section data-id="grunt-file">
+        <h2>Sample Gruntfile.js</h2>
+        <div>
 <pre><code> module.exports = function(grunt) {
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-        watch: {
-            sass: {
-                files: ['sass/**/*.{scss,sass}' ],
-                tasks: ['sass:dist']
-            },
-            livereload: {
-                files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css', 'images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
-                options: {
-                    livereload: true
-                }
-            }
-        },
-        sass: {
-            dist: {
-                options: {
-                    outputStyle: 'expanded'
-                },
-                files: {
-                    'css/bmi.css': 'sass/bmi.scss'
-                }
-            }
-        }
+    pkg: grunt.file.readJSON('package.json'),
+    watch: {
+    sass: {
+    files: ['sass/**/*.{scss,sass}' ],
+    tasks: ['sass:dist']
+    },
+    livereload: {
+    files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css', 'images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+    options: {
+    livereload: true
+    }
+    }
+    },
+    sass: {
+    dist: {
+    options: {
+    outputStyle: 'expanded'
+    },
+    files: {
+    'css/bmi.css': 'sass/bmi.scss'
+    }
+    }
+    }
     });
     grunt.registerTask('default', ['sass:dist', 'watch']);
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-};</code></pre>
-                    </div>
-                </section>
-            </section>
-        <section data-id="evaluation">
-            <section data-id="eval-intro">
-                <h2>Each site needs its own evaluation</h2>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <u>Mixin Libraries</u>
-                </div>
-                <div>COMPASS</div>
-                <div>BOURBON</div>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <u>How much framework?</u>
-                </div>
-                <div>Lots = Foundation</div>
-                <div>Not much = Bitters/Refills<br>
-                    <br>
-                </div>
-                <div>
-                    <u>Speed?</u>
-                </div>
-                <div>Libsass</div>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <br>
-                </div>
-            </section>
-            <section data-id="eval-2">
-                <h2>Evaluation cont.</h2>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <u>Grids</u>
-                    <br>
-                </div>
-                <div>Foundation: Its built in.</div>
-                <div>Bourbon: Neat</div>
-                <div>Libsass: Susy, Neat</div>
-                <div>Compass: Susy, Singularity, Foundation</div>
-                <div>
-                    <br>
-                </div>
-                <div>
-                    <u>Neat / Susy / Singularity</u>
-                </div>
-                <div>All math-based fluid grid systems;</div>
-                <div>similar features and syntax.</div>
-                <div>
-                    <br>
-                </div>
-                <div>Zen grids? No way!</div>
-            </section>
-        </section>
-        <section data-id="resources">
-            <h2>Resources</h2>
-            <div style="text-align: left; ">Sass — <a href="http://sass-lang.com">http://sass-lang.com</a>;<a href=" http://www.thesassway.com"> http://www.thesassway.com</a>
-            </div>
-            <div style="text-align: left; ">Compass — <a href="http://www.compass-style.org">http://www.compass-style.org</a>
-            </div>
-            <div style="text-align: left; ">Bundler —&nbsp;<a href="http://bundler.io">http://bundler.io</a>
-            </div>
-            <div style="text-align: left; ">Guard —&nbsp;<a href="https://github.com/guard/guard">https://github.com/guard/guard</a>
-            </div>
-            <div style="text-align: left; ">Livereload — Free Chrome extension</div>
-            <div style="text-align: left; ">Nodejs —&nbsp;<a href="http://nodejs.org/">http://nodejs.org/</a>
-            </div>
-            <div style="text-align: left; ">Libsass (node-sass) —&nbsp;<a href="https://github.com/andrew/node-sass">https://github.com/andrew/node-sass</a>
-            </div>
-            <div style="text-align: left; ">Grunt — <a href="http://gruntjs.com/getting-started">http://gruntjs.com/getting-started</a>
-            </div>
-            <div style="text-align: left; ">Bourbon — <a href="http://bourbon.io">http://bourbon.io</a>
-            </div>
-            <div style="text-align: left; ">Susy — <a href="http://susy.oddbird.net/ ">http://susy.oddbird.net/&nbsp;</a>
-            </div>
-            <div style="text-align: left; ">Singularity —&nbsp;<a href="https://github.com/Team-Sass/Singularity">https://github.com/Team-Sass/Singularity</a>
-            </div>
-            <div>
-                <br>
-            </div>
-        </section>
-        <section data-id="uses">
-            <h2>Where I have used WHat</h2>
-            <div>
-                <br>
-            </div>
-            <div>CCY -&nbsp;<span>Guard/Compass</span>
-            </div>
-            <div>NTL - Guard/Compass</div>
-            <div>SRE - Guard/Compass</div>
-            <div>SAS - Bourbon/Libsass</div>
-            <div>BMI - Bourbon/Libsass</div>
-            </section>
-            </div>
-			
+    };</code></pre>
+        </div>
+    </section>
+</section>
 
-		</div>
+<section data-id="autoprefixer">
+    <section data-id="prefixer-intro">
+        <h1>Autoprefixer</h1>
+        <p>Forget mixin libraries. Just use autoprefixer.</p>
+        <p><br></p>
+<pre><code class="scss">a {
+    transition: transform 1s
+    }</code></pre>
+        <p>becomes</p>
+<pre><code class="scss">a {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -ms-transform 1s;
+    transition: transform 1s
+    }</code></pre>
+    </section>
+    <section data-id="prefixer-install">
+        <h2>Install autoprefixer</h2>
+        <p>For your project</p>
+        <pre><code class="bash">$ npm install grunt-autoprefixer --save-dev</code></pre>
+        <p><br></p>
+        <p>globally</p>
+        <pre><code class="bash">$ npm install grunt-autoprefixer -g</code></pre>
+    </section>
+    <section data-id="prefixer-sample">
+        <h2>Sample Gruntfile.js</h2>
+<pre><code class="js">module.exports = function (grunt) {
+    'use strict';
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    grunt.initConfig({
+    autoprefixer: {
+    options: {
+    browsers: ['last 2 versions']
+    },
+    dist: {
+    files: {
+    'style.css': 'style.css'
+    }
+    }
+    },
 
-		<script>
+    watch: {
+    styles: {
+    files: ['style.css'],
+    tasks: ['autoprefixer']
+    }
+    }
+    });
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    };
+</code></pre>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'zoom', // default/cube/page/concave/zoom/linear/fade/none
+    </section>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+</section>
+<section data-id="evaluation">
+    <section data-id="eval-intro">
+        <h2>Each site needs its own evaluation</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <u>Mixin Libraries</u>
+        </div>
+        <div>COMPASS</div>
+        <div>BOURBON</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <u>How much framework?</u>
+        </div>
+        <div>Lots = Foundation</div>
+        <div>Not much = Bitters/Refills<br>
+            <br>
+        </div>
+        <div>
+            <u>Speed?</u>
+        </div>
+        <div>Libsass</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section data-id="eval-2">
+        <h2>Evaluation cont.</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <u>Grids</u>
+            <br>
+        </div>
+        <div>Foundation: Its built in.</div>
+        <div>Bourbon: Neat</div>
+        <div>Libsass: Susy, Neat</div>
+        <div>Compass: Susy, Singularity, Foundation</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <u>Neat / Susy / Singularity</u>
+        </div>
+        <div>All math-based fluid grid systems;</div>
+        <div>similar features and syntax.</div>
+        <div>
+            <br>
+        </div>
+        <div>Zen grids? No way!</div>
+    </section>
+</section>
+<section data-id="resources">
+    <h2>Resources</h2>
+    <div style="text-align: left; ">Sass — <a href="http://sass-lang.com">http://sass-lang.com</a>;<a href=" http://www.thesassway.com"> http://www.thesassway.com</a>
+    </div>
+    <div style="text-align: left; ">Compass — <a href="http://www.compass-style.org">http://www.compass-style.org</a>
+    </div>
+    <div style="text-align: left; ">Bundler —&nbsp;<a href="http://bundler.io">http://bundler.io</a>
+    </div>
+    <div style="text-align: left; ">Guard —&nbsp;<a href="https://github.com/guard/guard">https://github.com/guard/guard</a>
+    </div>
+    <div style="text-align: left; ">Livereload — Free Chrome extension</div>
+    <div style="text-align: left; ">Nodejs —&nbsp;<a href="http://nodejs.org/">http://nodejs.org/</a>
+    </div>
+    <div style="text-align: left; ">Libsass (node-sass) —&nbsp;<a href="https://github.com/andrew/node-sass">https://github.com/andrew/node-sass</a>
+    </div>
+    <div style="text-align: left; ">Grunt — <a href="http://gruntjs.com/getting-started">http://gruntjs.com/getting-started</a>
+    </div>
+    <div style="text-align: left; ">Bourbon — <a href="http://bourbon.io">http://bourbon.io</a>
+    </div>
+    <div style="text-align: left; ">Susy — <a href="http://susy.oddbird.net/ ">http://susy.oddbird.net/&nbsp;</a>
+    </div>
+    <div style="text-align: left; ">Singularity —&nbsp;<a href="https://github.com/Team-Sass/Singularity">https://github.com/Team-Sass/Singularity</a>
+    </div>
+    <div>
+        <br>
+    </div>
+</section>
+<section data-id="uses">
+    <h2>Where I have used WHat</h2>
+    <div>
+        <br>
+    </div>
+    <div>CCY -&nbsp;<span>Guard/Compass</span>
+    </div>
+    <div>NTL - Guard/Compass</div>
+    <div>SRE - Guard/Compass</div>
+    <div>SAS - Bourbon/Libsass</div>
+    <div>BMI - Bourbon/Libsass</div>
+</section>
+</div>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
 
-		</script>
+</div>
 
-	</body>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'zoom', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
 </html>
