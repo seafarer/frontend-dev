@@ -467,8 +467,8 @@ end
             </div>
             <div>(We should build our own)</div>
         </section>
-        <section data-id="ec736931ac1c124543c08ca9862fac64">
-            <section data-id="65bd5cb1c97f2bce8783b2f6fde4834d">
+        <section data-id="grunt">
+            <section data-id="grunt-intro">
                 <h1>GRunt</h1>
                 <div>A Nodejs/NPM-based task runner and <br>dependency manager.&nbsp;<span>Similar to Guard/Bundler.</span>
                 </div>
@@ -544,6 +544,63 @@ end
                     </div>
                 </section>
             </section>
+
+        <section data-id="autoprefixer">
+            <section data-id="prefixer-intro">
+                <h1>Autoprefixer</h1>
+                <p>Forget mixin libraries. Just use autoprefixer.</p>
+                <p><br></p>
+<pre><code class="scss">a {
+    transition: transform 1s
+}</code></pre>
+                <p>becomes</p>
+<pre><code class="scss">a {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -ms-transform 1s;
+    transition: transform 1s
+}</code></pre>
+            </section>
+            <section data-id="prefixer-install">
+                <h2>Install autoprefixer</h2>
+                <p>For your project</p>
+                <pre><code class="bash">$ npm install grunt-autoprefixer --save-dev</code></pre>
+                <p><br></p>
+                <p>globally</p>
+                <pre><code class="bash">$ npm install grunt-autoprefixer -g</code></pre>
+            </section>
+            <section data-id="prefixer-sample">
+                <h2>Sample Gruntfile.js</h2>
+<pre><code class="js">module.exports = function (grunt) {
+    'use strict';
+
+    grunt.initConfig({
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 versions']
+            },
+            dist: {
+                files: {
+                    'style.css': 'style.css'
+                }
+            }
+        },
+
+        watch: {
+            styles: {
+                files: ['style.css'],
+                tasks: ['autoprefixer']
+            }
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+};
+</code></pre>
+
+            </section>
+
+        </section>
         <section data-id="evaluation">
             <section data-id="eval-intro">
                 <h2>Each site needs its own evaluation</h2>
